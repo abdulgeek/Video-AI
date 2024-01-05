@@ -1,0 +1,71 @@
+
+.app-container {
+  display: flex;
+  height: max-content;
+}
+
+.sidebar {
+  width: 300px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.main-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.video-drafts {
+  display: flex;
+   flex-wrap: wrap;
+}
+
+.video-draft {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.chat-area {
+  margin-top: 20px;
+}
+
+.video-input-form input,
+.video-input-form button {
+  margin: 5px;
+}
+/* Update App.css */
+.dropdown {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown div:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
